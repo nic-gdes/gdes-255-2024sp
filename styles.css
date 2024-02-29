@@ -9,22 +9,66 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     padding: 20px;
+}
+
+/* header and nav */
+
+#header-section {
+    display: flex;
+    flex-direction: row;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    color: black;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    width: 90%;
+}
+
+a#logo {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 nav {
-    background: #444;
-    color: #fff;
+    color: black;
     padding: 10px;
     text-align: center;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+/* label.hamburger {
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+input#hamburger {
+    display: none
+} */
+
+#hamburger-icon {
+    margin: 6px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    height: 3px;
+    width: 30px;
+    margin: 4px 0;
+    background: #000;
 }
 
 nav a {
@@ -35,6 +79,89 @@ nav a {
 
 main {
     padding: 20px;
+    width: 100%;
+}
+
+main div {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.alt-section {
+    background-color: #EEF2F4;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.image-slider {
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.filler-image {
+    background-color: #9FB2C2;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+}
+
+.filler-image.ver-2 {
+    background-color: #9FB2C2;
+    height: 400px;
+    width: 300px;
+    margin: 0%;
+    display: flex;
+    align-items: end;
+}
+
+.list-showcase div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+}
+
+.column .column-contents {
+    display: flex;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: #98A4B4;
+
+}
+
+.floating-div {
+    background-color: #FFFFFF;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    width: 40%;
+    height: 20%
 }
 
 footer {
@@ -53,7 +180,26 @@ footer {
         padding: 10px;
     }
 
-    header, nav, main, footer {
+    header,
+    nav,
+    main,
+    footer {
         padding: 10px;
+    }
+
+    #mobile-nav {
+        display: block;
+        width: 100%;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #list-showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
